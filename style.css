@@ -88,3 +88,30 @@ body.pulses-bg::after {
   right: 0;
   background-image: url('images/pulses-decor.png');
 }
+body.home-page {
+    background: linear-gradient(to bottom, #0f2d0f, #4caf50);
+    background-image: url('rice-decor.png'), url('rice-bg.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right top;
+    background-size: contain;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.content-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 1000px;
+    border-radius: 10px;
+    color: white;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+}
