@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #4CAF50, #795548); /* Green to brown gradient */
+  background: linear-gradient(to bottom, #1b5e20, #4caf50, #795548); /* Deep green to brown */
   color: #ffffff;
 }
 
@@ -29,6 +29,8 @@ main {
   margin: auto;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 8px;
+  position: relative;
+  z-index: 1;
 }
 
 section {
@@ -49,4 +51,40 @@ ul {
 
 h1, h2 {
   color: #ffeb3b;
+}
+
+footer {
+  margin-top: 2rem;
+  background-color: #1b1b1b;
+}
+
+/* Decorative rice/pulses background on page edges */
+body.rice-bg::before, body.rice-bg::after,
+body.pulses-bg::before, body.pulses-bg::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background-repeat: repeat-y;
+  background-size: contain;
+  z-index: 0;
+  opacity: 0.08;
+}
+
+body.rice-bg::before {
+  left: 0;
+  background-image: url('images/rice-decor.png');
+}
+body.rice-bg::after {
+  right: 0;
+  background-image: url('images/rice-decor.png');
+}
+body.pulses-bg::before {
+  left: 0;
+  background-image: url('images/pulses-decor.png');
+}
+body.pulses-bg::after {
+  right: 0;
+  background-image: url('images/pulses-decor.png');
 }
