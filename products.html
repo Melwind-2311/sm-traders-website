@@ -14,6 +14,7 @@
       <a href="about.html">About Us</a>
       <a href="products.html">Products</a>
       <a href="contact.html">Contact</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
     </nav>
   </header>
   <main>
@@ -36,16 +37,31 @@
       </ul>
     </section>
   
-    <section id="order-payment" class="card">
-      <h2>Order & Payment</h2>
-      <p>Pay securely via Razorpay. You'll receive an instant receipt.</p>
-      <div class="rzp-button-container">
-        <!-- Replace pl_REPLACE_ME with your real Razorpay Payment Button ID from Dashboard -->
-        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_REPLACE_ME" async> </script>
+    <section>
+      <h2>Product Gallery</h2>
+      <div class="gallery">
+        <!-- Update src paths below to your actual image files already uploaded in GitHub, e.g. images/basmati.jpg -->
+        <div class="card">
+          <img src="images/basmati.jpg" alt="Basmati Rice" />
+          <div class="info"><strong>Basmati Rice</strong><br><span>Premium long-grain</span></div>
+        </div>
+        <div class="card">
+          <img src="images/sona_masoori.jpg" alt="Sona Masoori" />
+          <div class="info"><strong>Sona Masoori</strong><br><span>Light & aromatic</span></div>
+        </div>
+        <div class="card">
+          <img src="images/toor_dal.jpg" alt="Toor Dal" />
+          <div class="info"><strong>Toor Dal</strong><br><span>Polished/Unpolished</span></div>
+        </div>
+        <div class="card">
+          <img src="images/chana_dal.jpg" alt="Chana Dal" />
+          <div class="info"><strong>Chana Dal</strong><br><span>Split Bengal gram</span></div>
+        </div>
       </div>
-      <p class="small-note">Tip: In Razorpay Dashboard → Payment Button, set the amount or allow customer-defined amount and add a note field for Rice/Pulses order details.</p>
+      <p class="small-note">Tip: keep images in <code>/images/</code> and use meaningful names. Replace filenames above to match your repo.</p>
     </section>
-    </main>
+
+  </main>
   <footer>
     <p>GSTIN: 29AUQPB5041G2ZL | MSME Registered | &copy; 2025 S M Traders</p>
   </footer>
