@@ -103,4 +103,10 @@ a:hover{ color:#ffffff; }
 main > section:first-child{ margin-top: 1rem; }
 
 
+.product-list li {
+    font-size: 1.4em;  /* Increase size */
+    line-height: 1.6em; /* Improve spacing */
+}
+
+
 /* Keep nav in one line (already added earlier) */
