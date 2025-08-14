@@ -104,8 +104,8 @@ main > section:first-child{ margin-top: 1rem; }
 
 
 .product-list li {
-    font-size: 1.4em;  /* Increase size */
-    line-height: 1.6em; /* Improve spacing */
+    font-size: 1.2em;  /* Increase size */
+    line-height: 1.4em; /* Improve spacing */
 }
 
 
