@@ -2,43 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>S M Traders</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+    header, footer {
+      background-color: #1e1e1e;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #f1f1f1;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .contact {
+      line-height: 1.8;
+    }
+
+/* === Single-line top navigation & responsive header === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+header nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+header nav a { display: inline-block; }
+</style>
 </head>
-<body class="home">
+<body>
   <header>
-    <h1>S M Traders</h1>
+    <h1 style="text-align:center">S M Traders</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="products.html">Products</a>
       <a href="contact.html">Contact</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
     </nav>
   </header>
-
   <main>
-    <section class="content">
+    <div class="section" style="text-align:justify">
       <h2>Welcome to S M Traders</h2>
       <p>We are a forward-thinking trading company based in Bengaluru, Karnataka, specializing in the efficient and transparent trade of <strong>rice and pulses</strong> — two of the most essential staples in global nutrition.</p>
-
       <p>We bridge the gap between farmers, producers, and international markets, offering a seamless supply chain for commodities such as <strong>basmati and non-basmati rice (raw, boiled, steam, and broken)</strong>, as well as a wide variety of <strong>lentils, chickpeas, peas, and beans</strong>. Our goal is simple: to deliver quality products, backed by fair pricing, timely delivery, and reliable partnerships.</p>
-
       <p>With a dedicated team and deep market insights, we help buyers and suppliers navigate global trade with ease. By leveraging modern trading platforms and digital tools, we ensure price transparency, risk management through futures contracts, and sustainable sourcing practices that contribute to long-term food security.</p>
-
+    </div>
+    <div class="section" style="text-align:justify">
       <h2>Our Products</h2>
       <ul>
         <li><strong>Rice:</strong> Basmati, Non-Basmati, Raw, Boiled, Steam, Broken</li>
         <li><strong>Pulses:</strong> Lentils, Chickpeas, Peas, Beans</li>
       </ul>
-
+    </div>
+    <div class="section contact">
       <h2>Contact Us</h2>
-      <p><strong>Address:</strong><br>S M TRADERS<br>Bengaluru, Karnataka</p>
-    </section>
+      <p><strong>Address:</strong><br />
+      S M TRADERS<br />
+      Royale Nest No.12/301,<br />
+      1st Main, 8th Cross, Prashanth Nagar,<br />
+      Bengaluru, Karnataka – 560079</p>
+      <p><strong>Email:</strong> contact@smtraders.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+    </div>
   </main>
-
   <footer>
-    GSTIN: 29AUQPB5041G2ZL | MSME Registered | © 2025 S M Traders
+    <p>GSTIN: 29AUQPB5041G2ZL | MSME Registered | &copy; 2025 S M Traders</p>
   </footer>
 </body>
 </html>
