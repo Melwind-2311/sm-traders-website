@@ -102,4 +102,14 @@ a:hover{ color:#ffffff; }
 /* spacing for the first section on each page */
 main > section:first-child{ margin-top: 1rem; }
 
+.products-page .card h2 {
+    font-size: 2rem;
+}
+
+.products-page .card ul li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+
 /* Keep nav in one line (already added earlier) */
