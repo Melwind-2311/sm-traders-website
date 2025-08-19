@@ -14,20 +14,65 @@
       <a href="about.html">About Us</a>
       <a href="products.html">Products</a>
       <a href="contact.html">Contact</a>
-          <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
     </nav>
   </header>
+
   <main>
     <section>
       <p><strong>Address:</strong><br />
-      S M TRADERS<br />
-      Royale Nest No.12/301,<br />
-      1st Main, 8th Cross, Prashanth Nagar,<br />
-      Bengaluru, Karnataka – 560079</p>
-      <p><strong>Email:</strong> contact@smtraders.org.in</p>
-      <p><strong>Phone:</strong> +91 99000 01986</p>
+        S M TRADERS<br />
+        Royale Nest No.12/301,<br />
+        1st Main, 8th Cross, Prashanth Nagar,<br />
+        Bengaluru, Karnataka – 560079
+      </p>
+
+      <p><strong>Email:</strong> contact@smtraders.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+
+      <hr />
+
+      <!-- Contact Form -->
+      <h3>Send us a message</h3>
+      <form class="contact-form" action="mailto:contact@smtraders.com" method="post" enctype="text/plain">
+        <div class="form-row">
+          <label for="name">Name<span aria-hidden="true">*</span></label>
+          <input id="name" name="Name" type="text" placeholder="Your full name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="product">Products<span aria-hidden="true">*</span></label>
+          <input id="product" name="Products" type="text" placeholder="e.g., Rice, Toor Dal" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email ID<span aria-hidden="true">*</span></label>
+          <input id="email" name="Email" type="email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="form-row">
+          <label for="desc">Description<span aria-hidden="true">*</span></label>
+          <textarea id="desc" name="Description" rows="5" placeholder="Tell us what you need..." required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- Optional basic inline styles hook (uses your existing style.css if it has form styles) -->
+      <style>
+        .contact-form { max-width: 640px; margin: 1rem 0; }
+        .contact-form .form-row { display: flex; flex-direction: column; margin-bottom: 0.75rem; }
+        .contact-form label { font-weight: 600; margin-bottom: 0.25rem; }
+        .contact-form input, .contact-form textarea {
+          padding: 0.6rem; border: 1px solid #ccc; border-radius: 6px; font: inherit;
+        }
+        .contact-form button {
+          padding: 0.7rem 1.1rem; border: none; border-radius: 8px; cursor: pointer;
+        }
+      </style>
     </section>
   </main>
+
   <footer>
     <p>GSTIN: 29AUQPB5041G2ZL | MSME Registered | &copy; 2025 S M Traders</p>
   </footer>
